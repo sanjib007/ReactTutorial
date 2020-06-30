@@ -17,7 +17,7 @@ editHandler(){
     this.setState({
         ...this.state,
         Isinput:true
-    })
+    });
 }
 
 inputChange(event){
@@ -28,7 +28,7 @@ inputChange(event){
 }
 
 keyPressHandler(event){
-    if(event.key == 'Enter'){
+    if(event.key === 'Enter'){
         this.setState({
             ...this.state,
             Isinput:false
@@ -86,10 +86,3 @@ blurHandler(){
 
 export default Title
 
-
-{/* <form className="form-inline">
-                        <div className="form-group mx-sm-3 mb-2">
-                            <input type="text" className="form-control" id="inputPassword2" placeholder="Password" />
-                        </div>
-                        <button type="submit" className="btn btn-primary mb-2">Confirm identity</button>
-                    </form> */}
